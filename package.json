@@ -1,0 +1,33 @@
+{
+  "name": "autoexpress",
+  "version": "1.0.0",
+  "description": "A ts CLI to automatically generate an express app",
+  "main": "index.js",
+  "author": "patrickniyogitare28@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "test": "ech \"Error no test specified\" && exit 1",
+    "build": "tsc -b",
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.3",
+    "yargs": "^17.3.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^16.11.12",
+    "@types/yargs": "^17.0.7"
+  },
+  "bin":{
+    "autoexpress": "dist/index.js"
+  },
+  "keywords": [
+    "Typescript",
+    "Express",
+    "cli",
+    "generator"
+  ]
+}
